@@ -4,6 +4,10 @@
     <v-title/>
     <br>
     <v-picture/>
+    <Button :size="buttonSize" type="primary" :loading="loading" @click="toLoading">
+        <span v-if="!loading">进入测试</span>
+        <span v-else>Loading...</span>
+    </Button>
   </div>
 </template>
 <script>
@@ -14,6 +18,11 @@ export default {
   components: {
     'v-title': Title,
     'v-picture': Picture
+  },
+  data () {
+    return {
+      buttonSize: 'large'
+    }
   }
 }
 </script>
