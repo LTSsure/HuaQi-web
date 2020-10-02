@@ -5,18 +5,16 @@
 
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <v-hello></v-hello>
-    <router-view/>
+    <v-index/>
   </div>
 </template>
 
 <script>
-import Hello from './view/test.vue'
+import Index from './view/mainPage/index.vue'
 export default {
   name: 'App',
-  components:{
-    'v-hello':Hello
+  components: {
+    'v-index': Index
   }
 
 }
