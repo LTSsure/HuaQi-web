@@ -2,16 +2,27 @@
     <div class="picture">
     <Carousel autoplay v-model="value2" loop>
         <CarouselItem>
-            <div class="demo-carousel">1</div>
+            <div class="demo-carousel">
+                <p>这里放图片1</p>
+                <br>
+                <br>
+                <br>
+            </div>
         </CarouselItem>
         <CarouselItem>
-            <div class="demo-carousel">2</div>
+            <div class="demo-carousel">
+                <p>这里放图片2</p>
+            </div>
         </CarouselItem>
         <CarouselItem>
-            <div class="demo-carousel">3</div>
+            <div class="demo-carousel">
+                <p>这里放图片3</p>
+            </div>
         </CarouselItem>
         <CarouselItem>
-            <div class="demo-carousel">4</div>
+            <div class="demo-carousel">
+                <p>这里放图片4</p>
+            </div>
         </CarouselItem>
     </Carousel>
     </div>
