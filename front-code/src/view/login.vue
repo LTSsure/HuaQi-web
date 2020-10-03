@@ -72,7 +72,7 @@ export default {
     .logC a button {
         width: 100%;
         height: 45px;
-        background-color: #ee7700;
+        background-color: #5cadff;
         border: none;
         color: white;
         font-size: 18px;
@@ -87,7 +87,7 @@ export default {
 
     #wrap .logGet .logD.logDtip {
         width: 86%;
-        border-bottom: 1px solid #ee7700;
+        border-bottom: 1px solid #5cadff;
         margin-bottom: 60px;
         margin-top: 0px;
         margin-right: auto;
