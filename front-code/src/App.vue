@@ -10,11 +10,11 @@
 </template>
 
 <script>
-import Index from './view/mainPage/index.vue'
+import Avatar from './view/panels/funddetails.vue'
 export default {
   name: 'App',
   components: {
-    'v-index': Index
+    'v-index': Avatar
   }
 
 }
