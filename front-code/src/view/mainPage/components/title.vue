@@ -4,7 +4,9 @@
     <Button :size="buttonSize" shape="circle">基金走势</Button>
     <Button :size="buttonSize" shape="circle">智投组合</Button>
     <Button :size="buttonSize" shape="circle">关于基金</Button>
-    <Button type="primary">登陆</Button>
+    <router-link to="../login">
+      <Button type="primary">登陆</Button>
+    </router-link>
   </div>
 </template>
 <script>
