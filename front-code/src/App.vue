@@ -5,16 +5,26 @@
 
 <template>
   <div id="app">
-    <v-index/>
+  <router-link to="/fundtrade">
+    <Button :size="buttonSize" shape="circle">基金走势</Button>
+  </router-link>
+  <router-link to="/recommendedcombination">
+    <Button :size="buttonSize" shape="circle">智投组合</Button>
+  </router-link>
+  <router-link to="">
+    <Button :size="buttonSize" shape="circle">关于基金</Button>
+  </router-link>
+  <router-link to="/login">
+   <Button type="primary">登陆</Button>
+  </router-link>
+  <router-view></router-view>
   </div>
 </template>
 
 <script>
-import Index from './view/mainPage/index.vue'
 export default {
   name: 'App',
   components: {
-    'v-index': Index
   }
 
 }

@@ -2,11 +2,11 @@
   <!-- 所有的内容要被根节点包含起来 -->
   <div class="index">
     <v-title/>
+    <Button type="primary" @click="login">登陆</Button>
     <br>
     <v-picture/>
     <Button :size="buttonSize" type="primary" :loading="loading" @click="toLoading">
-        <span v-if="!loading">进入测试</span>
-        <span v-else>Loading...</span>
+    进入测试
     </Button>
   </div>
 </template>
@@ -22,6 +22,11 @@ export default {
   data () {
     return {
       buttonSize: 'large'
+    }
+  },
+  methods: {
+    login () {
+      this.$router.replace('login')
     }
   }
 }

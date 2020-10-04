@@ -26,7 +26,7 @@ export default {
   methods: {
     login () {
       // 假设登陆成功，则跳转到 index 组件
-      this.$router.replace('/index')
+      this.$router.replace('/')
     }
   }
 }
