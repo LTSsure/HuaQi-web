@@ -25,8 +25,21 @@
 export default {
   methods: {
     login () {
+      const validateFieldsKey = this.customActiveKey === 'tab1' ? ['username', 'password'] : ['registerUserType','registerUsername', 'registerUserMail','registerPassword','registerPasswordconfirm']
+        this.form.validateFields(validateFieldsKey, { force: true }, async (err, values) => {
+          if(!err){
+            this.loginLoading = true
+            const data = {
+              email: this.form.getFieldValue("username"),
+              password: this.form.getFieldValue("password")
+            }
+            await this.login(data)
+            this.loginLoading = false
+          
       // 假设登陆成功，则跳转到 index 组件
       this.$router.replace('/')
+          }
+           })
     }
   }
 }
